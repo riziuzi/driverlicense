@@ -14,12 +14,8 @@ export default function App() {
       }}
     >
       <Box sx={{ color: 'text.secondary' }}>Sessions</Box>
-      <Box sx={{ color: 'text.primary', fontSize: 34, fontWeight: 'medium', }}>
-        <a href='takeTest'>
-          <button>
-            Take test
-          </button>
-        </a>
+      <Box sx={{ color: 'text.primary', fontSize: 34, fontWeight: 'medium' }}>
+        98.3 K
       </Box>
       <Box
         component={TrendingUpIcon}
