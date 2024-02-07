@@ -10,6 +10,7 @@ import SignIn from './Pages/UserAuth/SignIn';
 import SignUp from './Pages/UserAuth/SignUp';
 import Home from './Pages/Home';
 import TestWindow from './Components/TestWindow';
+import './index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([

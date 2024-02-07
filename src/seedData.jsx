@@ -16,7 +16,7 @@ export const questions =
         ]
     },
     {
-        question : "When pedestrians are crossing the road near a pedestrian crossing, you should",
+        question : "When  are crossing the road near a pedestrian crossing, you should",
         options : [
             {
                 option : "Slow down, sound the horn, and then continue"

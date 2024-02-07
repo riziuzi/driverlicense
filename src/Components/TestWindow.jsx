@@ -1,11 +1,13 @@
 import React from 'react'
 import { questions } from '../seedData'
+import { Nav } from './Navbars/Navbars'
+import Main from './TakeTest/Main'
 
 export default function TestWindow() {
-
     return (
         <div>
-            {questions.map((data, index) => (
+            <Nav />
+            {/* {questions.map((data, index) => (
                 <div className="main" key={index}>
                     <div className="question">
                         {data.question}
@@ -16,7 +18,9 @@ export default function TestWindow() {
                         </div>
                     ))}
                 </div>
-            ))}
+            ))} */}
+            <Main />
+            <div className="header h-24 border border-red-500 w-full"></div>
         </div>
     )
 }
