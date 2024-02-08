@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { questions } from '../../seedData'
+import Timer from '../Timer';
 
 
 const checkerFunc = ({ questionstate = null } = {}) => {
     let arr = [];
+    
     console.log(questionstate)
     questionstate?.map((question, index1) => {
         let CorrectFlag = true;
@@ -23,6 +25,7 @@ const checkerFunc = ({ questionstate = null } = {}) => {
 };
 
 export default function Main() {
+    const [timeRemaining, settimeRemaining] = useState(null)
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [questionstate, setquestionstate] = useState(null)
     useEffect(() => {
@@ -41,7 +44,7 @@ export default function Main() {
     return (
         <div className='flex flex-col justify-center items-center'>
             <div className="left flex flex-col items-center border border-red-500 w-3/4">
-                <div className="timer">timer</div>
+                <div className="timer"><Timer leftseconds={900}/></div>
             </div>
             <div className="center flex flex-col items-center border border-red-500 w-3/4">
                 <div className="question mb-5">Q) {currentQuestion?.question}</div>

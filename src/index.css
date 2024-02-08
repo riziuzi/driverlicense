@@ -16,8 +16,8 @@
     --bg-300: #454545;
   }
 
-  body {
+  /* body {
     background-color: var(--bg-100);
     margin: 0;
-  }
+  } */
 }
